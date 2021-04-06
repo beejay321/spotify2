@@ -16,10 +16,10 @@ body#sidemenu .menu ul {
 }
 
 body#sidemenu .menu li {
-  padding-left: 50px;
+  padding-left: 18px;
 }
 
 body#sidemenu .menu li.active {
   border-left: 4px solid #41d76d;
-  padding-left: 46px;
+  padding-left: 14px;
 }
