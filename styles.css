@@ -1,0 +1,25 @@
+body#sidemenu .side {
+  background-color: #070d14;
+  height: 100vh;
+  width: 200px;
+}
+
+body#sidemenu .logo {
+  height: 40px;
+}
+
+body#sidemenu .menu {
+  color: white;
+}
+body#sidemenu .menu ul {
+  list-style: none;
+}
+
+body#sidemenu .menu li {
+  padding-left: 50px;
+}
+
+body#sidemenu .menu li.active {
+  border-left: 4px solid #41d76d;
+  padding-left: 46px;
+}
