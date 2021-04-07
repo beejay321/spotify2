@@ -1,19 +1,35 @@
-/* .brand {
-        left: 50%;
-        margin-left: -117px;
-        display: block;
-      } */
+@font-face {
+  font-family: "spotify-black";
+  src: url("lineto-circular-black.ttf");
+}
+@font-face {
+  font-family: "spotify-bold";
+  src: url("lineto-circular-pro-bold.ttf");
+}
+@font-face {
+  font-family: "spotify-book";
+  src: url("lineto-circular-pro-book.ttf");
+}
+@font-face {
+  font-family: "spotify-medium";
+  src: url("lineto-circular-pro-medium.ttf");
+}
+h6 {
+  font-family: "spotify-bold";
+}
 
 #btn-fb {
   background-color: #3e5a9b;
   border-radius: 30px;
   font-size: 0.8rem;
+  font-family: "spotify-black";
 }
 
 #apple {
   background-color: #000000;
   border-radius: 30px;
   font-size: 0.8rem;
+  font-family: "spotify-black";
 }
 #or {
   width: 100%;
@@ -21,6 +37,8 @@
   border-bottom: 1px solid rgb(212, 212, 212);
   line-height: 0.1em;
   margin: 10px 0 20px;
+  font-family: "spotify-book";
+  font-size: 0.7rem;
 }
 #or span {
   background: #fff;
@@ -33,30 +51,36 @@
   font-size: 0.8rem;
   border-radius: 30px;
   width: 10rem;
+  font-family: "spotify-black";
 }
 
 #remember h6 {
   font-size: 0.8rem;
   margin-top: 4px;
+  font-family: "spotify-book";
 }
 #forgot {
   text-align: center;
   font-size: 0.7rem;
   color: #55b950;
   padding-bottom: 1rem;
+  font-family: "spotify-book";
 }
 #h3-account {
   text-align: center;
   font-size: 1rem;
   padding-top: 0.8rem;
+  font-family: "spotify-black";
 }
 #btn-signup {
   border-radius: 30px;
   font-size: 0.8rem;
+  font-family: "spotify-black";
 }
 #notice {
   font-size: 0.7rem;
   text-align: center;
+  font-family: "spotify-book";
 }
 .custom-control {
   display: flex;
