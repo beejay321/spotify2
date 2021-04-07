@@ -21,52 +21,108 @@
         position: relative;
       }
       .brand {
-        /*         position: absolute;
- */
         left: 50%;
         margin-left: -117px;
         display: block;
       }
+      #h4-login {
+        margin-bottom: 0.25rem !important;
+        font-size: 0.6rem;
+      }
+      #h3-account {
+        margin-bottom: 0.25rem !important;
+        font-size: 0.6rem;
+      }
+      #btn-fb {
+        color: #fff;
+        background-color: #3e5a9b;
+        border-color: #3e5a9b;
+        font-size: 0.5rem;
+      }
+      #btn-apple {
+        color: #fff;
+        background-color: #000000;
+        border-color: #000000;
+        font-size: 0.5rem;
+      }
+      #btn-login {
+        border-color: #55b950;
+        background-color: #55b950;
+        font-size: 0.5rem;
+      }
+      #remember h4 {
+        font-size: 0.6rem;
+        display: inline-block;
+      }
+      #forgot {
+        font-size: 0.6rem;
+        color: #55b950;
+      }
+      .custom-control {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .form-control:focus {
+        border-color: #55b950;
+        box-shadow: 0 0 0 0.2rem rgb(85 185 80 / 25%);
+      }
+      .form-control {
+        font-size: 0.6rem;
+      }
+
+      /* above roles to change the checkbox to green */
+      .custom-checkbox
+        .custom-control-input:checked
+        ~ .custom-control-label::before {
+        background-color: #55b950 !important;
+      }
+      .custom-checkbox
+        .custom-control-input:checked:focus
+        ~ .custom-control-label::before {
+        box-shadow: 0 0 0 1px #55b950, 0 0 0 0.2rem rgba(85, 185, 80, 0.25);
+      }
+      .custom-checkbox
+        .custom-control-input:focus
+        ~ .custom-control-label::before {
+        box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(85, 185, 80, 0.25);
+      }
+      .custom-checkbox
+        .custom-control-input:active
+        ~ .custom-control-label::before {
+        background-color: #55b950;
+      }
     </style>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light mx-auto">
+    <nav class="navbar navbar-expand-lg navbar-light mx-auto">
+      <div class="row col-6">
         <a class="navbar-brand" href="#">
           <img src="img/Spotify_logo.png" alt="Spotify logo" class="brand" />
         </a>
-      </nav>
-    </div>
+      </div>
+    </nav>
     <div class="container">
       <div class="row justify-content-md-center">
-        <div class="col-4 text-center">
-          <h4 class="h4 mb-3 font-weight-bold">
+        <div class="col-6 text-center">
+          <h4 id="h4-login" class="h4 mb-3 font-weight-bold">
             To continue, log in to Spotify
           </h4>
           <button
+            id="btn-fb"
             type="button"
             class="btn btn-primary btn-lg btn-block"
             style="border-radius: 30px"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-facebook"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-              /></svg
-            >CONTINUE WITH FACEBOOK
+            <ion-icon name="logo-facebook"></ion-icon> CONTINUE WITH FACEBOOK
           </button>
           <button
+            id="btn-apple"
             type="button"
             class="btn btn-secondary btn-lg btn-block"
             style="border-radius: 30px"
           >
-            <i class="fab fa-apple"></i> CONTINUE WITH APPLE
+            <ion-icon name="logo-apple"></ion-icon> CONTINUE WITH APPLE
           </button>
           <br />
           <br />
@@ -90,29 +146,44 @@
               required=""
             />
             <br />
-            <div class="checkbox mb-3" style="text-align: left">
-              <label>
-                <input type="checkbox" value="remember-me" /> Remember me
+            <div
+              class="custom-control custom-checkbox mb-3"
+              style="text-align: left"
+            >
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                value="remember-me"
+                id="customCheck1"
+              />
+              <label
+                id="remember"
+                class="custom-control-label text-muted"
+                for="customCheck1"
+              >
+                <h4>Remember me</h4>
               </label>
               <button
+                id="btn-login"
                 type="button"
-                class="btn btn-secondary btn-lg"
+                class="btn btn-secondary btn-lg px-4"
                 style="border-radius: 30px"
               >
                 LOG IN
               </button>
             </div>
-            <h5 class="font-weight-light">Forgot your password?</h5>
-            <br />
+            <h5 id="forgot" class="font-weight-light">Forgot your password?</h5>
             <hr />
             <br />
-            <h3 class="h4 mb-3 font-weight-bold">Don't have an account?</h3>
+            <h3 id="h3-account" class="mb-3 font-weight-bold">
+              Don't have an account?
+            </h3>
             <button
               type="button"
               class="btn btn-block btn-outline-dark"
               style="border-radius: 30px"
             >
-              Dark
+              SIGN UP FOR SPOTIFY
             </button>
             <br />
             <hr />
@@ -127,6 +198,8 @@
       </div>
     </div>
 
+    <!-- Script for iconics -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
