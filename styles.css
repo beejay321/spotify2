@@ -1,16 +1,28 @@
 body {
-  background:#191919;
+  background: #191919;
   color: #f8f8f8;
 }
 .album-label {
-    
 }
 .year:after {
   content: " • ";
 }
 .btn {
-    border-radius: 20px;
-    width: 120px;
-    height: 40px;
-    
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
 }
+@font-face {
+  font-family: myFirstFont;
+  src: local[.ttf ("lineto-circular-black.ttf") ];
+
+h3 {
+  font-family: "myFirstFont", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* .album-name{
+    font-size: 40px;
+    font-weight: bold;
+} */
