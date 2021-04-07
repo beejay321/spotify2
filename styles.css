@@ -1,0 +1,16 @@
+body {
+  background:#191919;
+  color: #f8f8f8;
+}
+.album-label {
+    
+}
+.year:after {
+  content: " • ";
+}
+.btn {
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    
+}
