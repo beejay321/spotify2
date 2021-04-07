@@ -114,6 +114,15 @@ body#sidemenu .side-mobile {
 .top-menu li.active {
   color: #ffffff;
 }
+
+.single-album {
+  width: 100px;
+}
+h2 {
+  color: white;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 991px) {
   body#sidemenu .side {
     display: none;
