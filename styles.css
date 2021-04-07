@@ -1,4 +1,4 @@
-/* sidemenu styles  */ 
+/* sidemenu styles  */
 body#sidemenu .side {
   background-color: #070d14;
   height: 100vh;
@@ -130,22 +130,14 @@ body#sidemenu .side-mobile {
 }
 /* sidemenu styles end */
 
-
-
-
-
-
-
-
-
-body  {
+body {
   background: #191919;
   color: #f8f8f8;
 }
 .album-label {
 }
 .year::after {
-  content: " • ";  
+  content: " • ";
 }
 .btn {
   border-radius: 20px;
@@ -153,47 +145,40 @@ body  {
   height: 40px;
 }
 
-
 @font-face {
-  font-family: "spotify-black";  
-  src: url('lineto-circular-black.ttf')
+  font-family: "spotify-black";
+  src: url("lineto-circular-black.ttf");
 }
 @font-face {
-  font-family: "spotify-bold";  
-  src: url('lineto-circular-pro-bold.ttf')
+  font-family: "spotify-bold";
+  src: url("lineto-circular-pro-bold.ttf");
 }
 @font-face {
-  font-family: "spotify-book";  
-  src: url('lineto-circular-pro-book.ttf')
+  font-family: "spotify-book";
+  src: url("lineto-circular-pro-book.ttf");
 }
 @font-face {
-  font-family: "spotify-medium";  
-  src: url('lineto-circular-pro-medium.ttf')
+  font-family: "spotify-medium";
+  src: url("lineto-circular-pro-medium.ttf");
 }
 
 h3 {
   font-family: "spotify-bold";
-  
 }
-.artist{
+.artist {
   font-family: "spotify-book";
 }
-.songs{
-    font-family: "spotify-medium";
-    color: white;
-    }
-.play-btn{
+.songs {
+  font-family: "spotify-medium";
+  color: white;
+}
+.play-btn {
   font-family: "spotify-book";
   font-size: 15px;
   width: 150px;
 }
-    
-.label{
+
+.label {
   font-family: "spotify-book";
   font-size: 15px;
-  
-}    
-
-
-
-
+}
