@@ -1,0 +1,89 @@
+/* .brand {
+        left: 50%;
+        margin-left: -117px;
+        display: block;
+      } */
+
+#btn-fb {
+  background-color: #3e5a9b;
+  border-radius: 30px;
+  font-size: 0.8rem;
+}
+
+#apple {
+  background-color: #000000;
+  border-radius: 30px;
+  font-size: 0.8rem;
+}
+#or {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgb(212, 212, 212);
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+#or span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+#btn-login {
+  border-color: #55b950;
+  background-color: #55b950;
+  font-size: 0.8rem;
+  border-radius: 30px;
+  width: 10rem;
+}
+
+#remember h6 {
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+#forgot {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #55b950;
+  padding-bottom: 1rem;
+}
+#h3-account {
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 0.8rem;
+}
+#btn-signup {
+  border-radius: 30px;
+  font-size: 0.8rem;
+}
+#notice {
+  font-size: 0.7rem;
+  text-align: center;
+}
+.custom-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-control:focus {
+  border-color: #55b950;
+  box-shadow: 0 0 0 0.2rem rgb(85 185 80 / 25%);
+}
+.form-control {
+  font-size: 0.6rem;
+  font-size: 0.8rem;
+}
+
+/* above roles to change the checkbox to green */
+/* .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #55b950 !important;
+}
+.custom-checkbox
+  .custom-control-input:checked:focus
+  ~ .custom-control-label::before {
+  box-shadow: 0 0 0 1px #55b950, 0 0 0 0.2rem rgba(85, 185, 80, 0.25);
+}
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(85, 185, 80, 0.25);
+}
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+  background-color: #55b950;
+} */
