@@ -138,175 +138,312 @@ main .top-menu li {
     height: 100%;
   }
 @font-face {
-	font-family: spotifym;
-	src: url(fonts/lineto-circular-pro-medium.ttf);
-	font-family: spotifyb;
-	src: url(fonts/lineto-circular-pro-bold.ttf);
-	font-family: spotifybook;
-	src: url(fonts/lineto-circular-pro-book.ttf);
+  font-family: "spotify-black";
+  src: url("lineto-circular-black.ttf");
+}
+@font-face {
+  font-family: "spotify-bold";
+  src: url("lineto-circular-pro-bold.ttf");
+}
+@font-face {
+  font-family: "spotify-book";
+  src: url("lineto-circular-pro-book.ttf");
+}
+@font-face {
+  font-family: "spotify-medium";
+  src: url("lineto-circular-pro-medium.ttf");
+}
+
+@font-face {
+  font-family: spotifym;
+  src: url(fonts/lineto-circular-pro-medium.ttf);
+  font-family: spotifyb;
+  src: url(fonts/lineto-circular-pro-bold.ttf);
+  font-family: spotifybook;
+  src: url(fonts/lineto-circular-pro-book.ttf);
+}
+
+h6 #continue {
+  font-family: "spotify-bold";
+  font-size: 1rem;
+}
+
+#btn-fb {
+  background-color: #3e5a9b;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-family: "spotify-black";
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+}
+#btn-fb:hover {
+  transform: scale(1.02, 1.02);
+}
+
+#apple {
+  background-color: #000000;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-family: "spotify-black";
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+}
+#apple:hover {
+  transform: scale(1.02, 1.02);
+}
+#or {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgb(212, 212, 212);
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  font-family: "spotify-bold";
+  font-size: 0.7rem;
+}
+#or span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+#btn-login {
+  border-color: #55b950;
+  background-color: #55b950;
+  font-size: 0.8rem;
+  border-radius: 30px;
+  width: 10rem;
+  font-family: "spotify-black";
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+#btn-login:hover {
+  transform: scale(1.02, 1.02);
+}
+
+#remember h6 {
+  font-size: 0.8rem;
+  margin-top: 4px;
+  font-family: "spotify-book";
+}
+#forgot {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #55b950;
+  padding-bottom: 1rem;
+  font-family: "spotify-book";
+}
+#h3-account {
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 0.8rem;
+  font-family: "spotify-black";
+}
+#btn-signup {
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-family: "spotify-black";
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+#notice {
+  font-size: 0.7rem;
+  text-align: center;
+  font-family: "spotify-book";
+}
+#notice a {
+  color: #55b950;
+}
+.custom-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-control:focus {
+  border-color: #55b950;
+  box-shadow: 0 0 0 0.2rem rgb(85 185 80 / 25%);
+}
+.form-control {
+  font-size: 0.6rem;
+  font-size: 0.8rem;
+}
+
+/* above roles to change the checkbox to green */
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #55b950 !important;
+}
+.custom-checkbox
+  .custom-control-input:checked:focus
+  ~ .custom-control-label::before {
+  box-shadow: 0 0 0 1px #55b950, 0 0 0 0.2rem rgba(85, 185, 80, 0.25);
+}
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(85, 185, 80, 0.25);
+}
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+  background-color: #55b950;
 }
 
 body#sidemenu .side {
-	background-color: #070d14;
-	height: 100vh;
-	width: 200px;
-	position: fixed;
+  background-color: #070d14;
+  height: 100vh;
+  width: 200px;
+  position: fixed;
 }
-h1{
-	font-family: spotifyb !important;
+h1 {
+  font-family: spotifyb !important;
 }
-p{
-	font-family: spotifym !important;
+p {
+  font-family: spotifym !important;
 }
-span{
-	font-family: spotifybook !important;
+span {
+  font-family: spotifybook !important;
 }
-button{
-	font-family: spotifyb !important;
+button {
+  font-family: spotifyb !important;
 }
-
 
 body#sidemenu .logo {
-	height: 40px;
+  height: 40px;
 }
 
 body#sidemenu .menu {
-	color: white;
+  color: white;
 }
 body#sidemenu .menu ul {
-	list-style: none;
+  list-style: none;
 }
 
 body#sidemenu .menu li {
-	padding-left: 18px;
+  padding-left: 18px;
 }
 body#sidemenu .menu li a {
-	text-decoration: none;
-	color: white;
+  text-decoration: none;
+  color: white;
 }
 
 body#sidemenu .menu li.active {
-	border-left: 4px solid #41d76d;
-	padding-left: 14px;
+  border-left: 4px solid #41d76d;
+  padding-left: 14px;
 }
 
 body#sidemenu .buttons .sign-up {
-	height: 30px;
-	border-radius: 15px;
-	width: 150px;
-	background-color: white;
-	color: black;
-	font-weight: bold;
-	font-size: 0.8rem;
-	outline: none;
+  height: 30px;
+  border-radius: 15px;
+  width: 150px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 0.8rem;
+  outline: none;
 }
 body#sidemenu .buttons .sign-up:hover {
-	color: #41d76d;
-	outline: none;
+  color: #41d76d;
+  outline: none;
 }
 body#sidemenu .buttons .login {
-	height: 30px;
-	border-radius: 15px;
-	width: 150px;
-	background-color: #070d14;
-	color: rgb(192, 192, 192);
-	font-weight: bold;
-	font-size: 0.8rem;
-	border: 2px solid rgb(192, 192, 192);
+  height: 30px;
+  border-radius: 15px;
+  width: 150px;
+  background-color: #070d14;
+  color: rgb(192, 192, 192);
+  font-weight: bold;
+  font-size: 0.8rem;
+  border: 2px solid rgb(192, 192, 192);
 }
 body#sidemenu .buttons .login:hover {
-	color: #41d76d;
-	outline: none;
+  color: #41d76d;
+  outline: none;
 }
 body#sidemenu .buttons p {
-	color: rgb(192, 192, 192);
-	margin-top: 30px;
-	font-size: 0.8rem;
+  color: rgb(192, 192, 192);
+  margin-top: 30px;
+  font-size: 0.8rem;
 }
 body#sidemenu .buttons .cookie {
-	margin-right: 15px;
-	text-decoration: none;
-	color: rgb(192, 192, 192);
+  margin-right: 15px;
+  text-decoration: none;
+  color: rgb(192, 192, 192);
 }
 body#sidemenu .buttons .privacy {
-	margin-left: 15px;
-	text-decoration: none;
-	color: rgb(192, 192, 192);
+  margin-left: 15px;
+  text-decoration: none;
+  color: rgb(192, 192, 192);
 }
 body#sidemenu .side-mobile .top-bar {
-	background-color: #070d14;
-	height: 50px;
-	width: 100vw;
-	justify-content: space-between;
-	align-items: center;
-	position: fixed;
+  background-color: #070d14;
+  height: 50px;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
 }
 
 body#sidemenu .side-mobile .menu-body {
-	background-color: #070d14;
-	height: 100vh;
+  background-color: #070d14;
+  height: 100vh;
 }
 body#sidemenu .side-mobile {
-	display: none;
+  display: none;
 }
 
 #pageContent {
-	padding-left: 200px;
-	width: 100%;
+  padding-left: 200px;
+  width: 100%;
 }
 
 .home-content {
-	background: rgb(37, 70, 110);
-	background: linear-gradient(
-		148deg,
-		rgba(37, 70, 110, 1) 0%,
-		rgba(2, 4, 7, 1) 100%
-	);
-	height: 100vh;
+  background: rgb(37, 70, 110);
+  background: linear-gradient(
+    148deg,
+    rgba(37, 70, 110, 1) 0%,
+    rgba(2, 4, 7, 1) 100%
+  );
+  height: 100vh;
 }
 
 .top-menu li {
-	display: inline-block;
-	list-style: none;
-	color: #95a0ae;
-	font-size: 0.8rem;
-	font-weight: bold;
+  display: inline-block;
+  list-style: none;
+  color: #95a0ae;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 .top-menu li.active {
-	color: #ffffff;
+  color: #ffffff;
 }
 
 .single-album {
-	width: 100px;
+  width: 100px;
 }
 h2 {
-	color: white;
-	font-weight: bold;
+  color: white;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 991px) {
-	body#sidemenu .side {
-		display: none;
-	}
-	body#sidemenu .side-mobile {
-		display: block;
-	}
-	#pageContent {
-		padding-left: 0;
-		padding-top: 50px;
-	}
+  body#sidemenu .side {
+    display: none;
+  }
+  body#sidemenu .side-mobile {
+    display: block;
+  }
+  #pageContent {
+    padding-left: 0;
+    padding-top: 50px;
+  }
 }
 
 body {
-	background-color: #181818;
+  background-color: #181818;
 }
 html body#sidemenu main div#pageContent.page-content div.container-fluid {
-	background-image: url(assets/image.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 300px;
-	position: relative;
+  background-image: url(assets/image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  position: relative;
 }
 h1,
 h4,
@@ -314,52 +451,52 @@ h5,
 p,
 .bi,
 span {
-	color: white;
+  color: white;
 }
 h1 {
-	padding: 0px;
-	margin: -15px;
-	font-size: 80px;
+  padding: 0px;
+  margin: -15px;
+  font-size: 80px;
 }
 .btn-dark {
-	background-color: rgb(0, 0, 0, 0.8);
+  background-color: rgb(0, 0, 0, 0.8);
 }
 .follow {
-	padding-right: 35px;
-	padding-left: 35px;
+  padding-right: 35px;
+  padding-left: 35px;
 }
 .bi {
-	font-size: 20px;
+  font-size: 20px;
 }
 .hover {
-	border-bottom: 2px solid #28a745;
+  border-bottom: 2px solid #28a745;
 }
 div.overview div.col-10 span > span:hover {
-	border-bottom: 2px solid #28a745;
+  border-bottom: 2px solid #28a745;
 }
 
 .bi {
-	font-size: 50px;
+  font-size: 50px;
 }
 
 .album {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 .albumText {
-	width: 100%;
-	height: 60px;
-	white-space: wrap;
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
+  width: 100%;
+  height: 60px;
+  white-space: wrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .albumText > p {
-	padding: 0px !important;
-	margin: 0px !important;
-	margin-top: 5px !important;
-	line-height: 15px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  margin-top: 5px !important;
+  line-height: 15px !important;
 }
 /* 
 			.container-fluid::after {
@@ -378,28 +515,28 @@ div.overview div.col-10 span > span:hover {
 			} */
 
 @media (max-width: 500px) {
-	h1 {
-		margin-top: -30px;
-		margin-bottom: -20px;
-	}
+  h1 {
+    margin-top: -30px;
+    margin-bottom: -20px;
+  }
 }
 
 @media (max-width: 767px) {
-	h1 {
-		margin-top: -25px;
-	}
+  h1 {
+    margin-top: -25px;
+  }
 }
 @media (max-width: 300px) {
-	.overview {
-		display: none;
-	}
-	h1 {
-		margin-top: -15px;
-	}
+  .overview {
+    display: none;
+  }
+  h1 {
+    margin-top: -15px;
+  }
 }
 
 @media (max-width: 790px) {
-	.bi {
-		font-size: 40px;
-	}
+  .bi {
+    font-size: 40px;
+  }
 }
