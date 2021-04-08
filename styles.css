@@ -3,7 +3,9 @@ body#sidemenu .side {
   background-color: #070d14;
   height: 100vh;
   width: 200px;
+
   position: fixed;
+ 
 }
 
 body#sidemenu .logo {
@@ -12,6 +14,8 @@ body#sidemenu .logo {
 
 body#sidemenu .menu {
   color: white;
+  font-family: "spotify-medium";
+  letter-spacing: 00.01rem;
 }
 body#sidemenu .menu ul {
   list-style: none;
@@ -63,6 +67,21 @@ body#sidemenu .buttons p {
   margin-top: 30px;
   font-size: 0.8rem;
 }
+
+body#sidemenu .buttons .install {
+  margin-right: 15px;
+  text-decoration: none;
+  color: rgb(192, 192, 192);  
+  margin-bottom: 50px;
+  font-family: "spotify-medium";
+  letter-spacing: 00.01rem;
+}
+body#sidemenu .buttons .install:hover {
+  color: white; 
+}
+
+
+
 body#sidemenu .buttons .cookie {
   margin-right: 15px;
   text-decoration: none;
@@ -152,26 +171,54 @@ body {
   src: url("lineto-circular-pro-medium.ttf");
 }
 
-#album-title{
+#album-title {
   font-family: "spotify-bold";
   text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.01rem;
 }
 .artist {
   font-family: "spotify-book";
+ 
 }
 .songs {
   font-family: "spotify-medium";
   color: #f8f8f8;
   font-size: 15px;
+  letter-spacing: 0.05rem;
 }
+
 .play-btn {
   border-radius: 20px;
   font-family: "spotify-book";
-  font-size: 15px;
-  width: 150px;
+  font-size: 12px;
+  width: 120px;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.play-btn:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .label {
   font-family: "spotify-book";
-  font-size: 15px;
+  font-size: 12px;
+  letter-spacing: 0.1rem;
 }
+.liked {
+  color: #40a846;
+}
+.like:hover{
+  transform: scale(1.2, 1.2);
+}
+.threeDots:hover {
+  color: #f8f8f8 !important;
+}
+/* player styles */
+/* .player{
+  background-color: #282828;  
+  position:fixed;   
+  width:100%;
+  bottom: 0;
+  z-index: 1;  
+} */
