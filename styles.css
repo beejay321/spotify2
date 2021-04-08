@@ -15,6 +15,10 @@
   src: url("lineto-circular-pro-medium.ttf");
 }
 
+body main div.page-content div#albumStyle {
+  background-color: #191919;
+}
+
 body#sidemenu .side {
   background-color: #070d14;
   height: 100vh;
@@ -79,6 +83,19 @@ body#sidemenu .buttons p {
   margin-top: 30px;
   font-size: 0.8rem;
 }
+
+body#sidemenu .buttons .install {
+  margin-right: 15px;
+  text-decoration: none;
+  color: rgb(192, 192, 192);
+  margin-bottom: 50px;
+  font-family: "spotify-medium";
+  letter-spacing: 00.01rem;
+}
+body#sidemenu .buttons .install:hover {
+  color: white;
+}
+
 body#sidemenu .buttons .cookie {
   margin-right: 15px;
   text-decoration: none;
@@ -120,6 +137,7 @@ body#sidemenu .side-mobile {
     rgba(37, 70, 110, 1) 0%,
     rgba(2, 4, 7, 1) 100%
   );
+  height: 100vh;
 }
 
 main .top-menu li {
@@ -155,6 +173,51 @@ main .top-menu li {
     height: 100%;
   }
 }
+/* sidemenu styles end */
+
+#album-title {
+  font-family: "spotify-bold";
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.01rem;
+}
+.artist {
+  font-family: "spotify-book";
+}
+.songs {
+  font-family: "spotify-medium";
+  color: #f8f8f8;
+  font-size: 15px;
+  letter-spacing: 0.05rem;
+}
+
+.play-btn {
+  border-radius: 20px;
+  font-family: "spotify-book";
+  font-size: 12px;
+  width: 120px;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.play-btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.label {
+  font-family: "spotify-book";
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+}
+.liked {
+  color: #40a846;
+}
+.like:hover {
+  transform: scale(1.2, 1.2);
+}
+.threeDots:hover {
+  color: #f8f8f8 !important;
+}
+
 h6 #continue {
   font-family: "spotify-bold";
   font-size: 1rem;
@@ -430,7 +493,7 @@ h2 {
 body.artist-page {
   background-color: #181818;
 }
-html body#sidemenu main div#pageContent.page-content div.container-fluid {
+#container-fluid {
   background-image: url(assets/image.jpg);
   background-position: center;
   background-size: cover;
@@ -489,21 +552,6 @@ div.overview div.col-10 span > span:hover {
   margin-top: 5px !important;
   line-height: 15px !important;
 }
-/* 
-			.container-fluid::after {
-				content: "";
-				position: absolute;
-				left: 0;
-				bottom: -50px;
-				width: 100%;
-				height: 60px;
-				background: linear-gradient(
-					90deg,
-					rgba(18, 18, 18, 1) 58%,
-					rgb(32, 28, 28) 100%
-				);
-				opacity: 0.2;
-			} */
 
 @media (max-width: 500px) {
   h1 {
