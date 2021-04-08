@@ -28,6 +28,9 @@ h6 #continue {
   font-family: "spotify-bold";
   font-size: 1rem;
 }
+#login-page {
+  background-color: white;
+}
 
 #btn-fb {
   background-color: #3e5a9b;
@@ -54,6 +57,7 @@ h6 #continue {
 #apple:hover {
   transform: scale(1.02, 1.02);
 }
+
 #or {
   width: 100%;
   text-align: center;
@@ -154,17 +158,16 @@ body#sidemenu .side {
 h1 {
   font-family: spotifyb !important;
 }
-p {
+/* p {
   font-family: spotifym !important;
-}
+} */
 span {
   font-family: spotifybook !important;
 }
 button {
   font-family: spotifyb !important;
 }
-
-body#sidemenu .logo {
+*/ body#sidemenu .logo {
   height: 40px;
 }
 
@@ -326,9 +329,9 @@ h1 {
   padding-right: 35px;
   padding-left: 35px;
 }
-.bi {
+/* .bi {
   font-size: 20px;
-}
+} */
 .hover {
   border-bottom: 2px solid #28a745;
 }
@@ -336,9 +339,9 @@ div.overview div.col-10 span > span:hover {
   border-bottom: 2px solid #28a745;
 }
 
-.bi {
+/*.bi {
   font-size: 50px;
-}
+}*/
 
 .album {
   width: 100%;

@@ -22,7 +22,7 @@
 
     <title>Spotify Login</title>
   </head>
-  <body>
+  <body id="login-page">
     <div class="container-fluid d-flex justify-content-center">
       <nav class="navbar navbar-light">
         <a class="navbar-brand" href="#">
@@ -53,8 +53,8 @@
             href="#"
             role="button"
           >
-            <ion-icon class="px-2" name="logo-apple"></ion-icon> CONTINUE WITH
-            APPLE</a
+            <ion-icon id="apple-logo" class="px-2" name="logo-apple"></ion-icon>
+            CONTINUE WITH APPLE</a
           >
 
           <div class="py-2">
@@ -97,13 +97,21 @@
               >
                 <h6>Remember me</h6>
               </label>
-              <button
+              <!-- <button
                 id="btn-login"
                 type="button"
                 class="btn btn-secondary btn-lg px-4"
               >
                 LOG IN
-              </button>
+              </button> -->
+              <a
+                id="btn-login"
+                class="btn btn-secondary btn-lg btn-block py-2"
+                href="#"
+                role="button"
+              >
+                LOG IN</a
+              >
             </div>
 
             <a href="#" id="forgot">
@@ -115,22 +123,30 @@
               Don't have an account?
             </h3>
             <div class="py-2">
-              <button
+              <!-- <button
                 id="btn-signup"
                 type="button"
                 class="btn btn-block btn-outline-dark"
               >
                 SIGN UP FOR SPOTIFY
-              </button>
+              </button> -->
+              <a
+                id="btn-signup"
+                class="btn btn-block btn-outline-dark py-2"
+                href="#"
+                role="button"
+              >
+                SIGN UP FOR SPOTIFY</a
+              >
             </div>
 
             <hr />
-            <p id="notice" class="text-black-50">
+            <div id="notice" class="text-black-50">
               If you click "log in with Facebook" and are not a Spotify user,
               you will be registered and you agree to Spotify's<span
                 ><a href="#"> Terms & Conditions</a> </span
               >and<span><a href="#"> Privacy Policy.</a> </span>
-            </p>
+            </div>
           </div>
         </div>
       </div>
