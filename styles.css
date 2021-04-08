@@ -14,8 +14,9 @@
   font-family: "spotify-medium";
   src: url("lineto-circular-pro-medium.ttf");
 }
-h6 {
+h6 #continue {
   font-family: "spotify-bold";
+  font-size: 1rem;
 }
 
 #btn-fb {
@@ -23,6 +24,12 @@ h6 {
   border-radius: 30px;
   font-size: 0.8rem;
   font-family: "spotify-black";
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+}
+#btn-fb:hover {
+  transform: scale(1.02, 1.02);
 }
 
 #apple {
@@ -30,6 +37,12 @@ h6 {
   border-radius: 30px;
   font-size: 0.8rem;
   font-family: "spotify-black";
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+}
+#apple:hover {
+  transform: scale(1.02, 1.02);
 }
 #or {
   width: 100%;
@@ -37,7 +50,7 @@ h6 {
   border-bottom: 1px solid rgb(212, 212, 212);
   line-height: 0.1em;
   margin: 10px 0 20px;
-  font-family: "spotify-book";
+  font-family: "spotify-bold";
   font-size: 0.7rem;
 }
 #or span {
@@ -52,6 +65,11 @@ h6 {
   border-radius: 30px;
   width: 10rem;
   font-family: "spotify-black";
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+#btn-login:hover {
+  transform: scale(1.02, 1.02);
 }
 
 #remember h6 {
@@ -76,6 +94,8 @@ h6 {
   border-radius: 30px;
   font-size: 0.8rem;
   font-family: "spotify-black";
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
 }
 #notice {
   font-size: 0.7rem;
