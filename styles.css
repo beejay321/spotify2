@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "spotify-black";
+  src: url("lineto-circular-black.ttf");
+}
+@font-face {
+  font-family: "spotify-bold";
+  src: url("lineto-circular-pro-bold.ttf");
+}
+@font-face {
+  font-family: "spotify-book";
+  src: url("lineto-circular-pro-book.ttf");
+}
+@font-face {
+  font-family: "spotify-medium";
+  src: url("lineto-circular-pro-medium.ttf");
+}
+
 body#sidemenu .side {
   background-color: #070d14;
   height: 100vh;
@@ -137,32 +154,7 @@ main .top-menu li {
     padding-top: 50px;
     height: 100%;
   }
-@font-face {
-  font-family: "spotify-black";
-  src: url("lineto-circular-black.ttf");
 }
-@font-face {
-  font-family: "spotify-bold";
-  src: url("lineto-circular-pro-bold.ttf");
-}
-@font-face {
-  font-family: "spotify-book";
-  src: url("lineto-circular-pro-book.ttf");
-}
-@font-face {
-  font-family: "spotify-medium";
-  src: url("lineto-circular-pro-medium.ttf");
-}
-
-@font-face {
-  font-family: spotifym;
-  src: url(fonts/lineto-circular-pro-medium.ttf);
-  font-family: spotifyb;
-  src: url(fonts/lineto-circular-pro-bold.ttf);
-  font-family: spotifybook;
-  src: url(fonts/lineto-circular-pro-book.ttf);
-}
-
 h6 #continue {
   font-family: "spotify-bold";
   font-size: 1rem;
@@ -205,6 +197,7 @@ h6 #continue {
 #or span {
   background: #fff;
   padding: 0 10px;
+  color: black;
 }
 
 #btn-login {
@@ -291,16 +284,16 @@ body#sidemenu .side {
   position: fixed;
 }
 h1 {
-  font-family: spotifyb !important;
+  font-family: "spotify-black" !important;
 }
 p {
-  font-family: spotifym !important;
+  font-family: "spotify-medium" !important;
 }
 span {
-  font-family: spotifybook !important;
+  font-family: "spotify-book" !important;
 }
 button {
-  font-family: spotifyb !important;
+  font-family: "spotify-book";
 }
 
 body#sidemenu .logo {
@@ -434,7 +427,7 @@ h2 {
   }
 }
 
-body {
+body.artist-page {
   background-color: #181818;
 }
 html body#sidemenu main div#pageContent.page-content div.container-fluid {
@@ -465,9 +458,7 @@ h1 {
   padding-right: 35px;
   padding-left: 35px;
 }
-.bi {
-  font-size: 20px;
-}
+
 .hover {
   border-bottom: 2px solid #28a745;
 }
@@ -475,7 +466,7 @@ div.overview div.col-10 span > span:hover {
   border-bottom: 2px solid #28a745;
 }
 
-.bi {
+.artist-page .bi {
   font-size: 50px;
 }
 
@@ -493,7 +484,7 @@ div.overview div.col-10 span > span:hover {
   overflow: hidden;
 }
 .albumText > p {
-  padding: 0px !important;
+  padding: 10px 0px 0px 0px;
   margin: 0px !important;
   margin-top: 5px !important;
   line-height: 15px !important;
