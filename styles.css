@@ -3,9 +3,7 @@ body#sidemenu .side {
   background-color: #070d14;
   height: 100vh;
   width: 200px;
-
   position: fixed;
- 
 }
 
 body#sidemenu .logo {
@@ -71,16 +69,14 @@ body#sidemenu .buttons p {
 body#sidemenu .buttons .install {
   margin-right: 15px;
   text-decoration: none;
-  color: rgb(192, 192, 192);  
+  color: rgb(192, 192, 192);
   margin-bottom: 50px;
   font-family: "spotify-medium";
   letter-spacing: 00.01rem;
 }
 body#sidemenu .buttons .install:hover {
-  color: white; 
+  color: white;
 }
-
-
 
 body#sidemenu .buttons .cookie {
   margin-right: 15px;
@@ -179,7 +175,6 @@ body {
 }
 .artist {
   font-family: "spotify-book";
- 
 }
 .songs {
   font-family: "spotify-medium";
@@ -208,7 +203,7 @@ body {
 .liked {
   color: #40a846;
 }
-.like:hover{
+.like:hover {
   transform: scale(1.2, 1.2);
 }
 .threeDots:hover {
