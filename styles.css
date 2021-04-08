@@ -134,16 +134,6 @@ body {
   background: #191919;
   color: #f8f8f8;
 }
-.album-label {
-}
-.year::after {
-  content: " • ";
-}
-.btn {
-  border-radius: 20px;
-  width: 120px;
-  height: 40px;
-}
 
 @font-face {
   font-family: "spotify-black";
@@ -162,17 +152,20 @@ body {
   src: url("lineto-circular-pro-medium.ttf");
 }
 
-h3 {
+#album-title{
   font-family: "spotify-bold";
+  text-align: center;
 }
 .artist {
   font-family: "spotify-book";
 }
 .songs {
   font-family: "spotify-medium";
-  color: white;
+  color: #f8f8f8;
+  font-size: 15px;
 }
 .play-btn {
+  border-radius: 20px;
   font-family: "spotify-book";
   font-size: 15px;
   width: 150px;
