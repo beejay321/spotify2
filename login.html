@@ -21,11 +21,18 @@
     />
 
     <title>Spotify Login</title>
+    <style>
+      @media (max-width: 790px) {
+        #icons-small {
+          font-size: 15px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container-fluid d-flex justify-content-center">
       <nav class="navbar navbar-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="homePage.html">
           <img src="img/Spotify_logo 4.png" width="210px" alt="Spotify logo" />
         </a>
       </nav>
@@ -45,7 +52,8 @@
             href="#"
             role="button"
           >
-            <i class="bi bi-facebook px-2"></i> CONTINUE WITH FACEBOOK</a
+            <i id="icons-small" class="bi bi-facebook px-2"></i> CONTINUE WITH
+            FACEBOOK</a
           >
           <a
             id="apple"
@@ -53,8 +61,8 @@
             href="#"
             role="button"
           >
-            <ion-icon class="px-2" name="logo-apple"></ion-icon> CONTINUE WITH
-            APPLE</a
+            <ion-icon class="px-2" name="logo-apple"></ion-icon>
+            CONTINUE WITH APPLE</a
           >
 
           <div class="py-2">

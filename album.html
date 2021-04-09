@@ -22,16 +22,29 @@
     />
 
     <title>Spotify-Album page</title>
+    <style>
+      .artist:hover {
+        text-decoration: none;
+        transform: scaleX(1.1);
+      }
+
+      @media (max-width: 790px) {
+        #icons-small {
+          font-size: 15px;
+        }
+      }
+    </style>
   </head>
   <body id="sidemenu">
     <main>
       <nav class="side">
         <div class="d-flex pr-2" style="justify-content: center">
-          <img
-            class="logo mt-4"
-            src="./assets/sidemenu/Untitled-1.png"
-            alt="spotify logo"
-          />
+          <a href="homePage.html"
+            ><img
+              class="logo mt-4"
+              src="./assets/sidemenu/Untitled-1.png"
+              alt="spotify logo"
+          /></a>
         </div>
         <div class="menu mt-5">
           <ul class="px-0">
@@ -48,7 +61,7 @@
                 ></path>
               </svg>
 
-              <a href="#">Home</a>
+              <a href="homePage.html">Home</a>
             </li>
             <li class="mt-3 text-muted">
               <svg
@@ -101,8 +114,11 @@
           <!-- <button class="sign-up">SIGN UP</button> -->
 
           <a href="#" class="install"
-            ><i class="bi bi-arrow-down-circle text-white-50 pr-2"></i>Install
-            App</a
+            ><i
+              id="icons-small"
+              class="bi bi-arrow-down-circle text-white-50 pr-2"
+            ></i
+            >Install App</a
           >
           <hr />
 
@@ -116,11 +132,13 @@
       </nav>
       <nav class="side-mobile">
         <div class="container-fluid w-100 top-bar d-flex">
-          <img
-            src="./assets/sidemenu/Untitled-1.png "
-            height="36px"
-            alt="spotify logo"
-          />
+          <a href="homePage.html"
+            ><img
+              src="./assets/sidemenu/Untitled-1.png "
+              height="36px"
+              alt="spotify logo"
+            />
+          </a>
 
           <svg
             height="20pt"
@@ -180,7 +198,7 @@
                     ></path>
                   </svg>
 
-                  <a href="#">Home</a>
+                  <a href="homePage.html">Home</a>
                 </li>
                 <li class="mt-3 text-muted">
                   <svg
@@ -233,7 +251,10 @@
               <!-- <button class="sign-up">SIGN UP</button
               ><button class="login mt-2">LOGIN</button> -->
               <a href="#" class="install"
-                ><i class="bi bi-arrow-down-circle text-white-50 pr-2"></i
+                ><i
+                  id="icons-small"
+                  class="bi bi-arrow-down-circle text-white-50 pr-2"
+                ></i
                 >Install App</a
               >
 
@@ -260,10 +281,12 @@
                 />
               </div>
               <div class="album-label py-4">
-                <h2 id="album-title">Queen II</h2>
-                <p class="artist d-flex justify-content-center text-white-50">
-                  Queen
-                </p>
+                <h2 id="album-title">Queen II(Deluxe Edition 2011 Remaster)</h2>
+                <a
+                  class="artist d-flex justify-content-center text-white-50"
+                  href="artistPlusSidebar.html"
+                  >Queen</a
+                >
 
                 <div class="d-flex justify-content-center py-3">
                   <button type="button" class="play-btn btn btn-success">
@@ -272,26 +295,32 @@
                 </div>
                 <div class="d-flex justify-content-center">
                   <span class="label year text-white-50 px-1">1995 </span>
-                  <span class="label text-white-50 pt-1"
-                    ><i class="bi bi-dot"></i
+                  <span class="label text-white-50"
+                    ><i id="icons-small" class="bi bi-dot text-white-50"></i
                   ></span>
                   <span class="label text-nowrap text-white-50 px-1">
                     15 SONGS
                   </span>
                 </div>
                 <div class="d-flex justify-content-center py-4">
-                  <i class="like liked bi bi-heart pr-3"></i>
-                  <i class="threeDots bi bi-three-dots px-3 text-white-50"></i>
+                  <i id="icons-small" class="like liked bi bi-heart pr-3"></i>
+
+                  <i
+                    id="icons-small"
+                    class="threeDots bi bi-three-dots px-3 text-white-50"
+                  ></i>
                 </div>
               </div>
             </div>
 
             <div class="songs col-12 col-lg-8 py-2 py-lg-5">
               <div class="sgs row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
                 <div class="col-9">
                   Procession - Remastered 2011 <br /><a
-                    href=""
+                    href="artistPlusSidebar.html"
                     class="artist text-white-50"
                     >Queen</a
                   >
@@ -299,10 +328,38 @@
                 <div class="col-2 text-white-50">1:13</div>
               </div>
               <div class="row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
                 <div class="col-9">
-                  Procession - Remastered 2011 <br /><a
-                    href=""
+                  Father To Son - Remastered 2011 <br /><a
+                    href="artistPlusSidebar.html"
+                    class="artist text-white-50"
+                    >Queen</a
+                  >
+                </div>
+                <div class="col-2 text-white-50">6:13</div>
+              </div>
+              <div class="row d-flex justify-content-center pb-3">
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
+                <div class="col-9">
+                  White Queen(As it Began) - Remastered 2011 <br /><a
+                    href="artistPlusSidebar.html"
+                    class="artist text-white-50"
+                    >Queen</a
+                  >
+                </div>
+                <div class="col-2 text-white-50">4:33</div>
+              </div>
+              <div class="row d-flex justify-content-center pb-3">
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
+                <div class="col-9">
+                  Some Day One Day - Remastered 2011 <br /><a
+                    href="artistPlusSidebar.html"
                     class="artist text-white-50"
                     >Queen</a
                   >
@@ -310,158 +367,162 @@
                 <div class="col-2 text-white-50">1:13</div>
               </div>
               <div class="row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
                 <div class="col-9">
-                  Procession - Remastered 2011 <br /><a
-                    href=""
+                  The March Of The Black Queen - Remastered 2011 <br /><a
+                    href="artistPlusSidebar.html"
                     class="artist text-white-50"
                     >Queen</a
                   >
                 </div>
-                <div class="col-2 text-white-50">1:13</div>
+                <div class="col-2 text-white-50">4:16</div>
               </div>
               <div class="row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
                 <div class="col-9">
-                  Procession - Remastered 2011 <br /><a
-                    href=""
+                  See What A Fool I've Been - Remastered 2011 <br /><a
+                    href="artistPlusSidebar.html"
                     class="artist text-white-50"
                     >Queen</a
                   >
                 </div>
-                <div class="col-2 text-white-50">1:13</div>
+                <div class="col-2 text-white-50">4:82</div>
               </div>
               <div class="row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
                 <div class="col-9">
-                  Procession - Remastered 2011 <br /><a
-                    href=""
+                  Some Day One Day - Remastered 2011 <br /><a
+                    href="artistPlusSidebar.html"
                     class="artist text-white-50"
                     >Queen</a
                   >
                 </div>
-                <div class="col-2 text-white-50">1:13</div>
+                <div class="col-2 text-white-50">4:22</div>
               </div>
               <div class="row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
                 <div class="col-9">
-                  Procession - Remastered 2011 <br /><a
-                    href=""
+                  The Loser In The End - Remastered 2011 <br /><a
+                    href="artistPlusSidebar.html"
                     class="artist text-white-50"
                     >Queen</a
                   >
                 </div>
-                <div class="col-2 text-white-50">1:13</div>
+                <div class="col-2 text-white-50">4:01</div>
               </div>
               <div class="row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
                 <div class="col-9">
-                  Procession - Remastered 2011 <br /><a
-                    href=""
+                  Ogre Battle - Remastered 2011 <br /><a
+                    href="artistPlusSidebar.html"
                     class="artist text-white-50"
                     >Queen</a
                   >
                 </div>
-                <div class="col-2 text-white-50">1:13</div>
+                <div class="col-2 text-white-50">4:08</div>
               </div>
               <div class="row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
                 <div class="col-9">
-                  Procession - Remastered 2011 <br /><a
-                    href=""
+                  The Fairy Feller's Master- Stroke - Remastered 2011 <br /><a
+                    href="artistPlusSidebar.html"
                     class="artist text-white-50"
                     >Queen</a
                   >
                 </div>
-                <div class="col-2 text-white-50">1:13</div>
+                <div class="col-2 text-white-50">2:40</div>
               </div>
               <div class="row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
                 <div class="col-9">
-                  Procession - Remastered 2011 <br /><a
-                    href=""
+                  Nevermore - Remastered 2011 <br /><a
+                    href="artistPlusSidebar.html"
                     class="artist text-white-50"
                     >Queen</a
                   >
                 </div>
-                <div class="col-2 text-white-50">1:13</div>
+                <div class="col-2 text-white-50">1:18</div>
               </div>
               <div class="row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
                 <div class="col-9">
-                  Procession - Remastered 2011 <br /><a
-                    href=""
+                  The March Of The Black Queen - Remastered 2011 <br /><a
+                    href="artistPlusSidebar.html"
                     class="artist text-white-50"
                     >Queen</a
                   >
                 </div>
-                <div class="col-2 text-white-50">1:13</div>
+                <div class="col-2 text-white-50">6:32</div>
               </div>
               <div class="row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
                 <div class="col-9">
-                  Procession - Remastered 2011 <br /><a
-                    href=""
+                  Funny How Love Is - Remastered 2011 <br /><a
+                    href="artistPlusSidebar.html"
                     class="artist text-white-50"
                     >Queen</a
                   >
                 </div>
-                <div class="col-2 text-white-50">1:13</div>
+                <div class="col-2 text-white-50">2:49</div>
               </div>
               <div class="row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
                 <div class="col-9">
-                  Procession - Remastered 2011 <br /><a
-                    href=""
+                  Seven Seas Of Rhye - Remastered 2011 <br /><a
+                    href="artistPlusSidebar.html"
                     class="artist text-white-50"
                     >Queen</a
                   >
                 </div>
-                <div class="col-2 text-white-50">1:13</div>
+                <div class="col-2 text-white-50">2:48</div>
               </div>
               <div class="row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
                 <div class="col-9">
-                  Procession - Remastered 2011 <br /><a
-                    href=""
+                  See What A Fool Ive Been - Live BBC Session, London/July
+                  1973/2011 Remix <br /><a
+                    href="artistPlusSidebar.html"
                     class="artist text-white-50"
                     >Queen</a
                   >
                 </div>
-                <div class="col-2 text-white-50">1:13</div>
+                <div class="col-2 text-white-50">4:22</div>
               </div>
               <div class="row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
+                <p class="text-white-50">
+                  <i id="icons-small" class="bi bi-music-note"></i>
+                </p>
                 <div class="col-9">
-                  Procession - Remastered 2011 <br /><a
-                    href=""
+                  White Queen(As it Began) - Live At Hammersmith Odeon,
+                  London/December 1975 <br /><a
+                    href="artistPlusSidebar.html"
                     class="artist text-white-50"
                     >Queen</a
                   >
                 </div>
-                <div class="col-2 text-white-50">1:13</div>
-              </div>
-              <div class="row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
-                <div class="col-9">
-                  Procession - Remastered 2011 <br /><a
-                    href=""
-                    class="artist text-white-50"
-                    >Queen</a
-                  >
-                </div>
-                <div class="col-2 text-white-50">1:13</div>
-              </div>
-              <div class="row d-flex justify-content-center pb-3">
-                <p class="text-white-50"><i class="bi bi-music-note"></i></p>
-                <div class="col-9">
-                  Procession - Remastered 2011 <br /><a
-                    href=""
-                    class="artist text-white-50"
-                    >Queen</a
-                  >
-                </div>
-                <div class="col-2 text-white-50">1:13</div>
+                <div class="col-2 text-white-50">5:32</div>
               </div>
             </div>
           </div>
