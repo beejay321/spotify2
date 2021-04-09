@@ -15,78 +15,97 @@
 		/>
 		<title>player</title>
 		<style>
-			.container-fluid {
-				/* position: fixed;
-				bottom: 0;
-				left: 0; */
-				background-color: #181818 !important;
-				height: 97px;
-				/* padding: 5px !important; */
-				/* margin: 0px; */
-			}
 			div#musicText div a.musicName {
 				color: #fff !important;
-				font-size: 10px;
-				font-weight: bold;
+				font-size: 12px;
+				font-weight: 400;
 				margin: 0px;
-				line-height: 5px;
 			}
 
-			div.container-fluid
-				div.row.d-flex.align-items-center
-				div.col-4.col-sm-3
-				div.row.ml-0.p-0
-				div.col-4.m-0.p-0
-				img {
+			div #musicImage {
 				width: 100%;
 				height: auto;
 			}
 
-			hr {
+			.hr {
 				border: 2px solid #505050;
 				width: 100%;
 			}
-			.opacity {
-				opacity: 0.8;
-			}
-			span {
+
+			.span {
 				color: white;
 			}
 
-			@media (max-width: 450px) {
+			#player {
+				position: fixed;
+				left: 0px;
+				bottom: 0px;
+				width: 100%;
+				height: auto;
+				background-color: #181818 !important;
+				z-index: 1;
+			}
 
-				div.container div#icons > img {
-					cursor: pointer;
-					width: 15px;
-					height: 15px;
-				}
+			div#like > img:hover,
+			div#iconContainer > img:hover,
+			div#queue > img:hover,
+			div#connect > img:hover,
+			div#volume > img:hover,
+			div#cover > img:hover {
+				cursor: pointer;
+			}
+			.lin-clamp {
+				-webkit-line-clamp: 2;
+				line-height: 12px;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="container-fluid d-flex align-items-center">
-			<div class="row d-flex align-items-center">
-				<div
-					class="col-4 col-sm-3 col-xl-2 m-0 ml-3 p-0 d-flex align-items-center"
-				>
-					<div class="row ml-0 p-0 d-flex align-items-center">
-						<div class="col-4 m-0 p-0 d-flex align-items-center">
-							<img src="assets/albumCover9.jpg" alt="Current Music Image" />
+		<div id="player">
+		<div
+			id="playerContainer"
+			class="container-fluid m-0 p-0 d-flex align-items-center"
+		>
+			<div class="row d-flex w-100 m-0 p-0 align-items-center">
+				<div class="col-12 col-sm-3 col-xl-2 m-0 p-0 d-flex align-items-center">
+					<div class="row ml-0 p-4 p-sm-2 d-flex align-items-center">
+						<div
+							id="cover"
+							class="col-4 col-md-3 m-0 p-0 d-flex align-items-center"
+						>
+							<img
+								id="musicImage"
+								src="assets/albumCover9.jpg"
+								alt="Current Music Image"
+							/>
 						</div>
 						<div class="col-8 m-0 p-0 d-flex align-items-center">
 							<div class="row m-0 p-0 d-flex align-items-center">
 								<div class="col-12 m-0 p-0 d-flex align-items-center">
 									<div class="row m-0 p-0 d-flex align-items-center">
-										<div id="musicText" class="col-6 m-0 p-0">
-											<div class="col-12 border m-0 p-0">
-												<a class="musicName" href="">fathers.. </a>
-											</div>
-											<div class="col-12 border m-0 p-0">
-												<span><a class="musicName" href="">TJay</a> </span>
+										<div id="musicText" class="col-5 m-0 p-0">
+											<div class="col-12 m-0 p-2 lin-clamp">
+												<span
+													><a class="musicName" href=""
+														>White Dragon, Tbak
+													</a></span
+												>
 											</div>
 										</div>
-										<div class="col-auto m-0 p-2">
-											<img src="icons/heart.png" alt="" />
+										<div id="like" class="col-auto m-0 p-2">
+											<img
+												src="icons/heart.png"
+												alt="like icon"
+												width="18"
+												height="18"
+											/>
+											<img
+												src="icons/screen.png"
+												alt="Screen icon"
+												width="18"
+												height="18"
+												class="d-sm-none d-md-inline-block ml-lg-2"
+											/>
 										</div>
 									</div>
 								</div>
@@ -94,31 +113,269 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-4 col-sm-6 col-xl-8 d-flex align-items-center">
+				<!-- ///////////////////////////////////////// -->
+				<div class="col-12 col-sm-4 col-xl-5 d-flex align-items-center">
 					<div class="container m-0 p-0">
 						<div
 							id="icons"
-							class="row d-flex justify-content-center align-items-center"
+							class="row d-flex justify-content-around pt-2 align-items-center"
 						>
-							<!-- <div class="col-10 p-0 mx-auto"> -->
-							<img src="icons/shuffle.png" alt="" width="24" height="24" />
-							<img src="icons/previouse.png" alt="" width="24" height="24" />
-							<img src="icons/play.png" alt="" width="24" height="24" />
-							<img src="icons/next.png" alt="" width="24" height="24" />
-							<img src="icons/repeat.png" alt="" width="24" height="24" />
-							<!-- </div> -->
+							<div
+								id="iconContainer"
+								class="col-6 d-flex justify-content-around align-items-center"
+							>
+								<img
+									src="icons/shuffle.png"
+									alt="shuffle icon"
+									width="18"
+									height="18"
+								/>
+								<img
+									src="icons/previouse.png"
+									alt="previouse icon"
+									width="18"
+									height="18"
+								/>
+								<img
+									src="icons/play.png"
+									alt="play icon"
+									width="18"
+									height="18"
+								/>
+								<img
+									src="icons/next.png"
+									alt="next icon"
+									width="18"
+									height="18"
+								/>
+								<img
+									src="icons/repeat.png"
+									alt="repeat icon"
+									width="18"
+									height="18"
+								/>
+							</div>
 						</div>
 						<div class="row d-flex align-items-center">
 							<div class="col-12 d-flex align-items-center">
-								<span class="opacity">0:00</span>
-								<hr />
-								<span class="opacity">0:00</span>
+								<span class="span">0:00</span>
+								<hr class="hr" />
+								<span class="span">0:00</span>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!-- ////////////////////////////////////////////// -->
+				<div
+					class="col-12 col-sm-5 p-3 p-sm-0 d-flex justify-content-center justify-content-sm-end align-items-center"
+				>
+					<div id="queue" class="col-1">
+						<img
+							src="icons/queue.png"
+							alt="volume icon"
+							width="18"
+							height="18"
+						/>
+					</div>
+					<div id="connect" class="col-1">
+						<img
+							src="icons/connect.png"
+							alt="connect icon"
+							width="18"
+							height="18"
+						/>
+					</div>
+					<div id="volume" class="col-1">
+						<img
+							src="icons/volume.png"
+							alt="volume icon"
+							width="20"
+							height="20"
+						/>
+					</div>
+					<div class="col-5 col-sm-3"><hr class="hr" /></div>
+				</div>
 			</div>
 		</div>
+		</div>
+		<!-- <div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+					deleniti ex maiores recusandae corporis quidem illo iure ad similique
+					facilis molestiae expedita ipsa voluptatibus ab dolores consequuntur
+					quis velit hic!
+				</div>
+			</div>
+		</div> -->
 		<!-- <input type="range" id="range" /> -->
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
